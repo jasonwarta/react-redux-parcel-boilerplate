@@ -1,0 +1,23 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+		{
+			"name": "Start",
+			"shell_cmd": "cd `pwd` && yarn start"
+		},
+		{
+			"name": "Build",
+			"shell_cmd": "cd `pwd` && yarn run build"
+		},
+		{
+			"name": "Terminate",
+			"shell_cmd": "kill `pgrep -f parcel`"
+		}
+	]
+}
