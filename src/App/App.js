@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import styles from './App.scss';
+
 class App extends Component {
 	constructor(props) {
 		super(props);
@@ -10,8 +12,13 @@ class App extends Component {
 	componentWillMount() {}
 
 	render() {
+		console.log(styles);
 		return (
-			<div>Hello World</div>
+			<div className={styles.App}>
+			<p className={styles.AppMsg}>
+				Hello World
+			</p>
+			</div>
 		);
 	}
 
